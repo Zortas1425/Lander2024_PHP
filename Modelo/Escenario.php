@@ -2,11 +2,11 @@
 
  class Escenario{
  
- 	private $id;
-	private $nombre;
-	private $g;
-	private $ve;
-	private $he;
+ 	private $id;		// identificador del escenario
+	private $nombre;	// nombre
+	private $g;			// gravedad
+	private $ve;		// velocidad de entrada
+	private $he;		// distancia
 	
 	public function  __construct ($id, $nombre, $g, $ve, $he) {
 		$this -> id=$id;
@@ -19,8 +19,8 @@
 	public function getId() {return $this->id; }
 	public function setId($id){$this->id=$id;}
 	
-	public function getnombre() {return $this->nombre; }
-	public function setnombre($nombre){$this->nombre=$nombre;}
+	public function getNombre() {return $this->nombre; }
+	public function setNombre($nombre){$this->nombre=$nombre;}
 	
 	public function getG() {return $this->g; }
 	public function setG($g){$this->g=$g;}
