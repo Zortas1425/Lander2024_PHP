@@ -3,24 +3,17 @@
 class PerfilPot{
     // atributos
     private $id;
-    public $potencia = []; // Lo dejo vacío pero esto es un array de diez posiciones [10]
+    public array $potencia = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; // array de diez posiciones inicializadas en 0
 
-    // constructor vacío
-    public function __construct(){
-    }
+    // constructor
+    public function __construct(){ }
 
     // getter & setter
-    public function setId($_id){
-        $this->id = $_id;
-    }
-    public function setPotencia($_potencia){
-        $this->potencia = $_potencia;
-    }
-    public function getId(){
-        return $this->id;
-    }
-    public function getPotencia(){
-        return $this->potencia;
-    }
+    public function setId($_id){ $this->id = $_id; }
+    public function setPotencia(array $_potencia){ $this->potencia = $_potencia; }
+    public function getId(){ return $this->id; }
+    public function getPotencia(){ return $this->potencia; }
+    
+} // PerfilPot
 
-}
+?>
