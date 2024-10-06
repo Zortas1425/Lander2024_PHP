@@ -2,39 +2,39 @@
 
 class DatosSim{
 
-    private $dist=0;        //Distancia a la superficie
-    private $acel=0;        //Aceleración
-    private $vel=0;         //Velocidad
-    private $impulso=0;     // Impulso
-    private $fuel=0;        // Fuel restante
-    private $tiempo=0;      // Tiempo de simulación
+    private $id_ds=0;
+    private $tiempo=0;
+	private $vel=0;
+    private $fuel=0;
+    private $distancia=0;
+    private $id_sim=0;
 
-    public function  __construct ($dist, $acel, $vel, $impulso, $fuel, $tiempo) {
-		$this -> dist=$dist;
-		$this -> acel=$acel;
+    public function  __construct ($id_ds, $tiempo, $vel, $fuel, $distancia, $id_sim) {
+		$this -> id_ds=$id_ds;
+		$this -> tiempo=$tiempo;
 		$this -> vel=$vel;
-		$this -> impulso=$impulso;
 		$this -> fuel=$fuel;
-        $this -> tiempo=$tiempo;
+		$this -> distancia=$distancia;
+        $this -> id_sim=$id_sim;
 	}
 
-    public function getDist() {return $this->dist; }
-	public function setDist($dist){$this->dist=$dist;}
+    public function getId_ds() {return $this->id_ds; }
+	public function setId_ds($id_ds){$this->id_ds=$id_ds;}
 	
-	public function getAcel() {return $this->acel; }
-	public function setAcel($acel){$this->acel=$acel;}
+	public function getTiempo() {return $this->tiempo; }
+	public function setTiempo($tiempo){$this->tiempo=$tiempo;}
 	
 	public function getVel() {return $this->vel; }
 	public function setVel($vel){$this->vel=$vel;}
-	
-	public function getImpulso() {return $this->impulso; }
-	public function setImpulso($impulso){$this->impulso=$impulso;}
 
 	public function getFuel() {return $this->fuel; }
 	public function setFuel($fuel){$this->fuel=$fuel;}
+	
+	public function getDistancia() {return $this->distancia; }
+	public function setDistancia($distancia){$this->distancia=$distancia;}
 
-    public function getTiempo() {return $this->tiempo; }
-	public function setTiempo($tiempo){$this->tiempo=$tiempo;}
+    public function getId_sim() {return $this->id_sim; }
+	public function setId_sim($id_sim){$this->id_sim=$id_sim;}
 
 }
 
