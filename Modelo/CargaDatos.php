@@ -1,12 +1,12 @@
 <?php
 
 // Incluir las clases
-include("Modelo/PerfilPot.php");
-include("Modelo/Lander.php");
-include("Modelo/Player.php");
-include("Modelo/Escenario.php");
-include("Modelo/Puntuacion.php");
-include("Modelo/DatosSim.php");
+include("PerfilPot.php");
+include("Lander.php");
+include("Player.php");
+include("Escenario.php");
+include("Puntuacion.php");
+include("DatosSim.php");
 
 // función para creada para cargarDatos de forma in-line
 function cargarDatos() {

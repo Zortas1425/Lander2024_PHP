@@ -10,7 +10,7 @@ $landers = $datos['Landers'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="presentacion.css" />
     <title>Landers</title>
 </head>
 <body>
@@ -31,6 +31,10 @@ $landers = $datos['Landers'];
         </tr>
         <?php endforeach; ?>
     </table>
-    <a class="button" href="index.php">Volver al inicio</a>
+    <br>
+ 	<br>
+ 	<form action = "indice.html" method="POST">
+  		<input type="submit" name="Vuelta" value="Atrás">
+  	</form>
 </body>
 </html>

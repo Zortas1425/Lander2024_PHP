@@ -6,7 +6,6 @@
 	<head>
         <meta charset="utf-8">
         <meta name="Índice de escenarios" content="Escenarios" />
-   	   	   
         <title>Escenarios</title>
         <link rel="stylesheet" type="text/css" href="presentacion.css" />
     </head>
@@ -64,13 +63,9 @@
 
  	<br>
  	<br>
-
  	<form action = "indice.html" method="POST">
-
-  			<input type="submit" name="Vuelta" value="Atrás">
-
-  		</form>
-   
+  		<input type="submit" name="Vuelta" value="Atrás">
+  	</form>
   </body>
 
 </html>

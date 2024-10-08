@@ -112,13 +112,9 @@
 
  	<br>
  	<br>
-
  	<form action = "indice.html" method="POST">
-
-  			<input type="submit" name="Vuelta" value="Atrás">
-
-  		</form>
-
+		<input type="submit" name="Vuelta" value="Atrás">
+  	</form>
   </body>
 
 </html>
