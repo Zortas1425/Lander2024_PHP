@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-
 <!-- Índice de escenarios -->
-	
 	<head>
         <meta charset="utf-8">
         <meta name="Índice de escenarios" content="Escenarios" />
-   	   	   
         <title>Escenarios</title>
-        <link rel="stylesheet" type="text/css" href="presentacion.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
-  
-  <body>
-  
-   <h1>L A N D E R 2 0 2 4</h1>
-   
- 	<h2>Índice de Escenarios</h2>
- 	
- 	<h3>Elija un escenario</h3>
- 	
+  <body>   
+ 	<h1>Índice de Escenarios</h1> 	
  	<?php
-
 	include "Escenario.php"; 	 
- 	 
     $escenarios=array();
-
     $idEscenario = array(1, 2, 3, 4);
     $nombres = array("MOON","MARS", "CALLISTO", "PLUTO");
     $gravedad = array(1.62, 3.71, 1.235, 0.62);
@@ -64,13 +51,7 @@
 
  	<br>
  	<br>
-
- 	<form action = "indice.html" method="POST">
-
-  			<input type="submit" name="Vuelta" value="Atrás">
-
-  		</form>
-   
+     <a class="button" href="index.php">Volver al inicio</a>
   </body>
 
 </html>

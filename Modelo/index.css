@@ -8,6 +8,7 @@ main{
     padding: 60px;
     margin: 60px;
     box-shadow:  0 0 0 5px rgb(32, 32, 77), 15px 15px 0 0 rgb(32, 32, 77);
+    width: 600px;
 }
 
 

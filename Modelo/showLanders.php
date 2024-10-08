@@ -2,7 +2,7 @@
 // incluir la carpeta que contiene los datos a utilizar
 include("CargaDatos.php");
 $datos = cargarDatos();
-$jugadores = $datos['Jugadores'];
+$landers = $datos['Landers'];
 ?>
 
 <!DOCTYPE html>
@@ -10,22 +10,24 @@ $jugadores = $datos['Jugadores'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <title>Jugadores</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Landers</title>
 </head>
 <body>
-    <h1>Jugadores</h1>
+    <h1>Landers</h1>
     <table>
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Grupo</th>
+            <th>Fuel Depósito</th>
+            <th>Resistencia Tren</th>
         </tr>
-        <?php foreach ($jugadores as $jugador): ?>
+        <?php foreach ($landers as $lander): ?>
         <tr>
-            <td><?php echo $jugador->getId(); ?></td>
-            <td><?php echo $jugador->getNombre(); ?></td>
-            <td><?php echo $jugador->getGrupo(); ?></td>
+            <td><?php echo $lander->getId(); ?></td>
+            <td><?php echo $lander->getNombre(); ?></td>
+            <td><?php echo $lander->getFuel_Deposito(); ?></td>
+            <td><?php echo $lander->getRes_tren(); ?></td>
         </tr>
         <?php endforeach; ?>
     </table>
