@@ -14,6 +14,9 @@
         <a href="showLanders.php">Landers</a>
         <a href="showEscenarios.php">Escenarios</a>
         <a href="showPuntuaciones.php">Puntuaciones</a> 
+        <a href="showPerfilPot.php">Perfil de Potencia</a> 
+        <a href="/Modelo/indiceDat.php">Datos de la Simulación</a> 
+        <a href="/Modelo/indiceEsc.php">Escenarios</a>
     </div>
     </main>
 </body>

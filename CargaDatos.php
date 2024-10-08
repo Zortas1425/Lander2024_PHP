@@ -45,11 +45,6 @@ function cargarDatos() {
     $puntuacion3 = new Puntuacion(3,350,55, "2024-09-12 22:30:55");
     $puntuaciones  = [ $puntuacion1, $puntuacion2, $puntuacion3 ]; // array con todas las puntuaciones
 
-    // Perfiles de Potencia -- REVISAR (como definir esta clase correctamente) 
-    $perfil_pot1 = new PerfilPot();
-    $perfil_pot2 = new PerfilPot();
-    $perfil_pot3 = new PerfilPot();
-
     // de vuelve un array de datos combinados 
     return ["Jugadores" => $jugadores,
             "Landers" => $landers,

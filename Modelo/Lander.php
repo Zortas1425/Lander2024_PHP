@@ -50,9 +50,9 @@ class Lander {
     public function getTiempo(){ $this->tiempo; }
     public function setPerfPot(PerfilPot $p){ $this->perfPot = $p; }
 
-    /*public function getPerfPot($nivel){
-        return PerfilPot->getPotencia($nivel);
-    }*/
+    public function getPerfPot($nivel){
+        return $this->perfPot->getPotencia()[$nivel];
+    }
 
     // To-String
     public function __tostring(){

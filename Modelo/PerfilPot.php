@@ -3,14 +3,26 @@
 class PerfilPot{
     // atributos
     private $id;
-    public array $potencia = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; // array de diez posiciones inicializadas en 0
+    private $potencia = []; // array de diez posiciones
 
     // constructor
-    public function __construct(){ }
+    public function __construct(){
+        $this->potencia = array_fill(0,10,0.0);
+    }
 
     // getter & setter
-    public function setId($_id){ $this->id = $_id; }
-    public function setPotencia(array $_potencia){ $this->potencia = $_potencia; }
+    public function setId($_id){
+        $this->id= $_id;
+    }
+
+    // Setter para actualizar el valor en una posición específica del array
+    public function setPotencia($_nivel, $valor){
+        if ($_nivel >= 0 && $_nivel < 10) {
+            $this->potencia[$_nivel] = $valor;
+        } else {
+            throw new Exception("El nivel debe estar entre 0 y 9.");
+        }
+}
     public function getId(){ return $this->id; }
     public function getPotencia(){ return $this->potencia; }
     
